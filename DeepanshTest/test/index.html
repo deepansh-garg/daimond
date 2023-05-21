@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ASCII - Diamond Shop</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.js"></script>
+</head>
+
+<body>
+    <section>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#">DimendSCAASI</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Diamonds</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Accessories</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">
+                            Fine Jewelry
+                            <span class="sr-only">(current)</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Watches</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <button class="btn btn-link nav-link" id="searchButton">
+                            <i class="fa-search"></i>
+                            Search
+                        </button>
+                    </li>
+                    <li class="nav-item">
+                        <button class="btn btn-link nav-link" id="manButton">
+                            <i class="fa-user"></i>
+                            Man
+                        </button>
+                    </li>
+                    <li class="nav-item">
+                        <button class="btn btn-link nav-link" id="likeButton">
+                            <i class="fa-heart"></i>
+                            Like
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </section>
+    <section class="ringcollection" style="margin-top: 50px;">
+        <!-- <div id="carouselExampleControls" class="carousel carousel-dark slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="card-wrapper container-sm d-flex  justify-content-around">
+                        <div class="card  " style="width: 18rem;">
+                            <img src="image4.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h4>Pave</h4>
+                                <p>Take 20% off for a limited time use code LOVE20</p>
+                                <button class="btn view-details-btn">View Details</button>
+                            </div>
+                        </div>
+                        <div class="card" style="width: 18rem;">
+                            <img src="image4.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h4>Hidden Halo</h4>
+                                <p>Take 30% off for a limited time use code LOVE30</p>
+                                <button class="btn view-details-btn">View Details</button>
+                            </div>
+                        </div>
+                        <div class="card" style="width: 18rem;">
+                            <img src="image4.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h4>Vintage</h4>
+                                <p>Take 40% off for a limited time use code LOVE40</p>
+                                <button class="btn view-details-btn">View Details</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="card-wrapper container-sm d-flex   justify-content-around">
+                        <div class="card  " style="width: 18rem;">
+                            <img src="image4.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h4>Pave</h4>
+                                <p>Take 20% off for a limited time use code LOVE20</p>
+                                <button class="btn view-details-btn">View Details</button>
+                            </div>
+                        </div>
+                        <div class="card" style="width: 18rem;">
+                            <img src="image4.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h4>Hidden Halo</h4>
+                                <p>Take 30% off for a limited time use code LOVE30</p>
+                                <button class="btn view-details-btn">View Details</button>
+                            </div>
+                        </div>
+                        <div class="card" style="width: 18rem;">
+                            <img src="image4.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h4>Vintage</h4>
+                                <p>Take 40% off for a limited time use code LOVE40</p>
+                                <button class="btn view-details-btn">View Details</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="card-wrapper container-sm d-flex  justify-content-around">
+                        <div class="card " style="width: 18rem;">
+                            <img src="image4.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h4>Pave</h4>
+                                <p>Take 20% off for a limited time use code LOVE20</p>
+                                <button class="btn view-details-btn">View Details</button>
+                            </div>
+                        </div>
+                        <div class="card" style="width: 18rem;">
+                            <img src="image4.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h4>Hidden Halo</h4>
+                                <p>Take 30% off for a limited time use code LOVE30</p>
+                                <button class="btn view-details-btn">View Details</button>
+                            </div>
+                        </div>
+                        <div class="card" style="width: 18rem;">
+                            <img src="image4.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h4>Vintage</h4>
+                                <p>Take 40% off for a limited time use code LOVE40</p>
+                                <button class="btn view-details-btn">View Details</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div> -->
+        <div class="slick">
+            <div>
+                <div class="card">
+                    <img src="Images\ring1.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h4>Pave</h4>
+                        <p>Take 20% off for a limited time use code LOVE20</p>
+                        <button class="btn view-details-btn">View Details</button>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="card">
+                    <img src="Images\ring2.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h4>Hidden Halo</h4>
+                                <p>Take 30% off for a limited time use code LOVE30</p>
+                        <button class="btn view-details-btn">View Details</button>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="card">
+                    <img src="Images\ring3.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h4>Vintage</h4>
+                                <p>Take 40% off for a limited time use code LOVE40</p>
+                                <button class="btn view-details-btn">View Details</button>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="card">
+                    <img src="Images\ring4.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h4>Antique</h4>
+                        <p>This is our premium product</p>
+                        <button class="btn view-details-btn">View Details</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="collection-section" style="margin-top: 100px; padding-bottom: 50px;">
+        <h2>Our Collection</h2>
+        <p>
+            Discover our elegant and unique fine jewelry collections,
+            <br>
+            ranging from classic diamond studs to stylish pendants
+            <br>
+            and dazzling bracelets.
+        </p>
+    </section>
+    <section class="ringdisplay" style="margin-top: 50px; background-color: bisque;">
+        <section class="mytop">
+            <section class="pt-5 pb-5">
+                <div class="container">
+                    <div class="mycontainer">
+                        <div class="row">
+                            <div class="col-12">
+                                <div id="carouselExampleIndicators2" class="carousel slide" data-ride="carousel">
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active align-center">
+                                            <div class="myrow">
+                                                <div class="colmd4 mb3">
+                                                    <div class="card mycard1">
+                                                        <img class="img-fluid" alt="100%x280"
+                                                            src="https://thumbs.dreamstime.com/b/diamond-ring-rose-resting-pink-flower-45235273.jpg">
+                                                        <div class="card-body my-card-body">
+                                                            <h4>Fine jewellery</h4>
+                                                            <p>Every Daimond in our collection</p>
+                                                            <button class="btn view-details-btn">View Details</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="colmd4 mb3">
+                                                    <div class="card mycard1">
+                                                        <img class="img-fluid" alt="100%x280"
+                                                            src="https://thumbs.dreamstime.com/b/diamond-ring-rose-resting-pink-flower-45235273.jpg">
+                                                        <div class="card-body my-card-body">
+                                                            <h4>Engagement Rings</h4>
+                                                            <p>Every Daimond in our collection</p>
+                                                            <button class="btn view-details-btn">View Details</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="colmd4 mb3">
+                                                    <div class="card mycard1">
+                                                        <img class="img-fluid" alt="100%x280"
+                                                            src="https://thumbs.dreamstime.com/b/diamond-ring-rose-resting-pink-flower-45235273.jpg">
+                                                        <div class="card-body my-card-body">
+                                                            <h4>Wedding Rings</h4>
+                                                            <p>Every Daimond in our collection</p>
+                                                            <button class="btn view-details-btn">View Details</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="colmd4 mb3">
+                                                    <div class="card mycard1">
+                                                        <img class="img-fluid" alt="100%x280"
+                                                            src="https://thumbs.dreamstime.com/b/diamond-ring-rose-resting-pink-flower-45235273.jpg">
+                                                        <div class="card-body my-card-body">
+                                                            <h4>Fine jewellery</h4>
+                                                            <p>Every Daimond in our collection</p>
+                                                            <button class="btn view-details-btn">View Details</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </section>
+    </section>
+    <section class="explore">
+        <h4 style="font: bold;">Explore Loose Diamonds</h4>
+        <p>every daimond in our collection is selected for its superior cut, symmettry and shape</p>
+    </section>
+    <section class="ringcollection">
+        <!-- <div id="carouselExampleControls1" class="carousel carousel-dark slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="card-wrapper container-sm d-flex  justify-content-around">
+                        <div class="card  " style="width: 18rem;">
+                            <img src="https://images.wallpaperscraft.com/image/single/jewelry_gold_bright_80751_1600x900.jpg"
+                                class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Oval</h5>
+                            </div>
+                        </div>
+                        <div class="card" style="width: 18rem;">
+                            <img src="https://images.wallpaperscraft.com/image/single/jewelry_gold_bright_80751_1600x900.jpg"
+                                class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Round</h5>
+                            </div>
+                        </div>
+                        <div class="card" style="width: 18rem;">
+                            <img src="https://images.wallpaperscraft.com/image/single/jewelry_gold_bright_80751_1600x900.jpg"
+                                class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Emerald</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="card-wrapper container-sm d-flex   justify-content-around">
+                        <div class="card  " style="width: 18rem;">
+                            <img src="https://images.wallpaperscraft.com/image/single/jewelry_gold_bright_80751_1600x900.jpg"
+                                class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">oval</h5>
+                            </div>
+                        </div>
+                        <div class="card" style="width: 18rem;">
+                            <img src="https://images.wallpaperscraft.com/image/single/jewelry_gold_bright_80751_1600x900.jpg"
+                                class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">heart</h5>
+                            </div>
+                        </div>
+                        <div class="card" style="width: 18rem;">
+                            <img src="https://images.wallpaperscraft.com/image/single/jewelry_gold_bright_80751_1600x900.jpg"
+                                class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">asscher</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="card-wrapper container-sm d-flex  justify-content-around">
+                        <div class="card " style="width: 18rem;">
+                            <img src="https://images.wallpaperscraft.com/image/single/jewelry_gold_bright_80751_1600x900.jpg"
+                                class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Daimond</h5>
+                            </div>
+                        </div>
+                        <div class="card" style="width: 18rem;">
+                            <img src="https://images.wallpaperscraft.com/image/single/jewelry_gold_bright_80751_1600x900.jpg"
+                                class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">ruby</h5>
+                            </div>
+                        </div>
+                        <div class="card" style="width: 18rem;">
+                            <img src="https://images.wallpaperscraft.com/image/single/jewelry_gold_bright_80751_1600x900.jpg"
+                                class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="heart"></h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls1"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls1"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div> -->
+
+        <div class="slider">
+            <input type="radio" name="testimonial" id="t-1">
+            <input type="radio" name="testimonial" id="t-2">
+            <input type="radio" name="testimonial" id="t-3" checked>
+            <input type="radio" name="testimonial" id="t-4">
+            <input type="radio" name="testimonial" id="t-5">
+            <div class="testimonials">
+                <label class="item" for="t-1">
+                    <img width="100%"
+                        src="https://media.istockphoto.com/id/155013169/photo/jewelry-on-window-display.jpg?s=612x612&w=0&k=20&c=HJOD1gPfNRlDfewJH89BmtvwKU2soa0I1YBxzqaNO8M="
+                        class="card-img-top" alt="...">
+                </label>
+                <label class="item" for="t-2">
+                    <img width="100%"
+                        src="https://media.istockphoto.com/id/489814272/photo/gold-silver-rings-and-chains.jpg?s=612x612&w=0&k=20&c=d8tGqzlmqMZzhcYmgE_OyDNSQ9dAdo-T3BwdaSsDbhs="
+                        class="card-img-top" alt="...">
+                </label>
+                <label class="item" for="t-3">
+                    <img width="100%"
+                        src="https://media.istockphoto.com/id/118199633/photo/jewelry.jpg?s=612x612&w=0&k=20&c=c-8oQ7UE_aikN15LQDzV5pcavM6Px8dRc_Y2knDVWQg="
+                        class="card-img-top" alt="...">
+                </label>
+                <label class="item" for="t-4">
+                    <img width="100%"
+                        src="https://e0.pxfuel.com/wallpapers/529/357/desktop-wallpaper-gold-jewellery-design-gold-jewelry-thumbnail.jpg"
+                        class="card-img-top" alt="...">
+                </label>
+                <label class="item" for="t-5">
+                    <img width="100%"
+                        src="https://images.wallpaperscraft.com/image/single/jewelry_gold_bright_80751_1600x900.jpg"
+                        class="card-img-top" alt="...">
+                </label>
+            </div>
+            <br />
+            <div class="dots">
+                <label for="t-1"></label>
+                <label for="t-2"></label>
+                <label for="t-3"></label>
+                <label for="t-4"></label>
+                <label for="t-5"></label>
+            </div>
+        </div>
+
+    </section>
+    <section class="seconddisplay"></section>
+    <section class="signup" style="padding-top: 150px; padding-bottom: 150px; ">
+        <div class="signup-container" style="padding: 20px;">
+            <h4>Keep in Touch</h4>
+            <p>Our lab-created diamonds are an eco-conscious choice and exhibit the same sparkle as natural diamonds.
+            </p>
+            <form id="signup-form">
+                <p>Enter your email to subscribe:</p>
+                <input type="email" id="email-input" placeholder="Your email address" required>
+                <button type="submit">Sign Up</button>
+            </form>
+        </div>
+        <div class="image-container" style="padding-right: 20px;">
+            <img class="Jewellery" src="Images\Jewellery-1.jpg" alt="Jewellery 1">
+            <img class="Jewellery" src="Images\Jewellery-2.jpg" alt="Jewellery 2">
+            <img class="Jewellery" src="Images\Jewellery-3.jpg" alt="Jewellery 3">
+            <img class="Jewellery" src="Images\Jewellery-4.jpg" alt="Jewellery 4">
+        </div>
+    </section>
+    <section class="dimendscasi">
+        <div style="display: inline;">
+            <h4>
+                dimend
+                <span style="font-family: bold;">
+                    SCAASI
+                    </p>
+            </h4>
+        </div>
+        <h6 style="color: rgb(202, 48, 107);">20+ years of trust</h6>
+        <h6 style="color: rgb(219, 203, 203);">DimendSCAASI jwellers is a unique jwellery store located in Chicago with
+            a great emphasis on great style and seceptional quality</h6>
+    </section>
+    <footer>
+        <section class="logo-section">
+            <div class="logo-container">
+                <img class="logo" src="Images\gia-logo.png" alt="GIA">
+                <img class="logo" src="Images\jewelers-of-america-logo.jpg" alt="Jewelers of America">
+                <img class="logo" src="Images\jvc-logo.png" alt="JVC">
+                <img class="logo" src="Images\accredited-business-logo.png" alt="Accredited Business">
+                <img class="logo" src="Images\visa-logo.png" alt="Visa">
+                <img class="logo" src="Images\mastercard-logo.png" alt="Mastercard">
+                <img class="logo" src="Images\discover-logo.png" alt="Discover">
+                <img class="logo" src="Images\paypal-logo.png" alt="PayPal">
+                <img class="logo" src="Images\american-express-logo.png" alt="American Express">
+            </div>
+        </section>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+    <script src="slick.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+        crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>

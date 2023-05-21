@@ -1,0 +1,415 @@
+.ourcollection {
+  background-color: peach;
+  text-align: center;
+  padding: 40px 0;
+}
+
+.ourcollection h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.ourcollection p {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.signup-container {
+  flex: 1;
+}
+
+.signup-container h4 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.signup-container p {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+#email-input {
+  width: 300px;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.image-container {
+  flex: 1;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.image-container img {
+  width: 100%;
+  height: auto;
+}
+
+.dimendscasi {
+  background-color: antiquewhite;
+}
+
+.logo-section {
+  background-color: #f5f5f5;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.collection-section {
+  background-color: peach;
+  text-align: center;
+  padding: 40px 0;
+}
+
+.collection-section h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.collection-section p {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.explore {
+  text-align: center;
+  padding: 40px 0;
+}
+
+.explore h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.explore p {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.logo {
+  width: 50px;
+  height: 30px;
+  margin-left: 10px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.signup {
+  display: flex;
+}
+
+.Jewellery {
+  width: 300px;
+  height: 250px;
+  margin-left: 10px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.item-section {
+  max-width: fit-content;
+  padding: 100px 0;
+  padding: 20px;
+  background-color: #f5f5f5;
+  text-align: center;
+  max-height: 70%;
+}
+
+.item-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 1000px; /* Limit the maximum width to prevent overlapping with the navbar */
+  margin: 0 auto;
+}
+
+.item {
+  /* position: relative; */
+  flex-shrink: 0;
+  width: 300px;
+  margin: 0 10px;
+  text-align: center;
+  transition: all 0.3s ease;
+  flex: 0 0 200px; /* Reduce the width of individual items */
+  margin: 50px;
+}
+
+.item img {
+  width: 100%;
+  height: auto;
+}
+
+.item h4,
+.item p {
+  display: none;
+}
+
+.item.zoomed {
+  transform: scale(1.7);
+}
+
+.item.zoomed h4,
+.item.zoomed p,
+.item.zoomed .view-details-btn {
+  display: block;
+}
+
+.shrunk {
+  transform: scale(0.5);
+  opacity: 0.5;
+  transition: all 0.3s ease;
+}
+
+.shrunk.zoomed {
+  transform: scale(3.4);
+}
+
+.shrunk.zoomed.left {
+  transform-origin: left;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  opacity: 0;
+  transition: all 0.3s ease;
+}
+
+.shrunk.zoomed.right {
+  transform-origin: right;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  opacity: 0;
+  transition: all 0.3s ease;
+}
+
+.shrunk.zoomed.bottom {
+  transform-origin: bottom;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  opacity: 0;
+  transition: all 0.3s ease;
+}
+
+.view-details-btn {
+  background-color: black;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+.align-center {
+  text-align: center;
+}
+
+.myrow {
+  display: flex;
+}
+
+.mycard1,
+.img-fluid,
+.my-card-body {
+  width: 100%;
+}
+
+.colmd4,
+.mb3 {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.ringdisplay {
+  height: 50%;
+}
+
+.collection-section {
+  margin-bottom: 300px;
+}
+
+.mycontainer,
+.mytop {
+  margin-top: -190px;
+}
+
+.slider {
+  width: 100%;
+}
+.slider input {
+  display: none;
+}
+.testimonials {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  min-height: 350px;
+  perspective: 1000px;
+  overflow: hidden;
+}
+.testimonials .item {
+  width: 300px;
+  padding: 30px;
+  border-radius: 5px;
+  background-color: #dac4c9;
+  position: absolute;
+  border: 3px solid rgb(187, 184, 184);
+  top: 0;
+  box-sizing: border-box;
+  text-align: center;
+  transition: transform 0.4s;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  user-select: none;
+  cursor: pointer;
+}
+.testimonials .item h1 {
+  font-size: 114px;
+  color: white;
+}
+.dots {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.dots label {
+  height: 5px;
+  width: 5px;
+  border-radius: 50%;
+  cursor: pointer;
+  background-color: #a3989f;
+  margin: 7px;
+  transition-duration: 0.2s;
+}
+#t-1:checked ~ .dots label[for="t-1"],
+#t-2:checked ~ .dots label[for="t-2"],
+#t-3:checked ~ .dots label[for="t-3"],
+#t-4:checked ~ .dots label[for="t-4"],
+#t-5:checked ~ .dots label[for="t-5"] {
+  transform: scale(2);
+  background-color: #fff;
+  box-shadow: 0px 0px 0px 3px #dddddd24;
+}
+
+#t-1:checked ~ .dots label[for="t-2"],
+#t-2:checked ~ .dots label[for="t-1"],
+#t-2:checked ~ .dots label[for="t-3"],
+#t-3:checked ~ .dots label[for="t-2"],
+#t-3:checked ~ .dots label[for="t-4"],
+#t-4:checked ~ .dots label[for="t-3"],
+#t-4:checked ~ .dots label[for="t-5"],
+#t-5:checked ~ .dots label[for="t-4"] {
+  transform: scale(1.5);
+}
+
+#t-1:checked ~ .testimonials label[for="t-3"],
+#t-2:checked ~ .testimonials label[for="t-4"],
+#t-3:checked ~ .testimonials label[for="t-5"],
+#t-4:checked ~ .testimonials label[for="t-1"],
+#t-5:checked ~ .testimonials label[for="t-2"] {
+  transform: translate3d(600px, 0, -180px) rotateY(-25deg);
+  z-index: 2;
+}
+
+#t-1:checked ~ .testimonials label[for="t-2"],
+#t-2:checked ~ .testimonials label[for="t-3"],
+#t-3:checked ~ .testimonials label[for="t-4"],
+#t-4:checked ~ .testimonials label[for="t-5"],
+#t-5:checked ~ .testimonials label[for="t-1"] {
+  transform: translate3d(300px, 0, -90px) rotateY(-15deg);
+  z-index: 3;
+}
+
+#t-2:checked ~ .testimonials label[for="t-1"],
+#t-3:checked ~ .testimonials label[for="t-2"],
+#t-4:checked ~ .testimonials label[for="t-3"],
+#t-5:checked ~ .testimonials label[for="t-4"],
+#t-1:checked ~ .testimonials label[for="t-5"] {
+  transform: translate3d(-300px, 0, -90px) rotateY(15deg);
+  z-index: 3;
+}
+
+#t-3:checked ~ .testimonials label[for="t-1"],
+#t-4:checked ~ .testimonials label[for="t-2"],
+#t-5:checked ~ .testimonials label[for="t-3"],
+#t-2:checked ~ .testimonials label[for="t-5"],
+#t-1:checked ~ .testimonials label[for="t-4"] {
+  transform: translate3d(-600px, 0, -180px) rotateY(25deg);
+}
+
+#t-1:checked ~ .testimonials label[for="t-1"],
+#t-2:checked ~ .testimonials label[for="t-2"],
+#t-3:checked ~ .testimonials label[for="t-3"],
+#t-4:checked ~ .testimonials label[for="t-4"],
+#t-5:checked ~ .testimonials label[for="t-4"],
+#t-5:checked ~ .testimonials label[for="t-5"] {
+  z-index: 4;
+}
+
+.slick span {
+  display: block;
+  background: #fff;
+  color: #fff;
+  font-size: 36px;
+  height: 100px;
+  line-height: 100px;
+  position: relative;
+  text-align: center;
+  border: solid 0px rgb(255, 255, 255);  
+  opacity: .5;
+}
+
+.slick-slide {
+  transform: scale(.5);
+  transition:transform .4s ease;
+}
+
+.slick-slide.slick-center {
+  transform: scale(1);}
+
+.slick-slide.slick-center span {
+  z-index: 1;
+  transform: scale(1);
+  opacity: 1;
+  color: #ffffff;
+}
+
+.slick-prev,
+.slick-next{
+  position: absolute;
+  top: 50%;
+  appearance: none;
+  margin-top: -10px;
+  padding: 0;
+  border: 0;
+  background: none;
+  cursor: pointer;
+  color: transparent;
+  outline: none;
+  z-index: 100;
+}
+
+.slick-prev {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 15px 15px 15px 0;
+  border-color: transparent #dbdddf transparent transparent;
+  left: 0;
+}
+.slick-next {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 15px 0 15px 15px;
+  border-color: transparent transparent transparent #dbdddf;
+  right: 0;
+}
+
